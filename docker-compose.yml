@@ -1,0 +1,23 @@
+version: "3.5"
+
+services:
+  transmission:
+    container_name: transmission
+    build: ./docker
+    image: grmontesino/transmission:alpine-3.15
+    env_file: ./.env
+    restart: "no"
+    user: ${UID:-100}
+    networks:
+      - torrent
+    ports:
+      - "${RPC_PORT:-9091}:9091"
+      - "${PEER_PORT_TCP:-51413}:51413/tcp"
+      - "${PEER_PORT_UDP:-51413}:51413/udp"
+    volumes:
+      - "./config:/transmission/config"
+      - "./download:/transmission/download"
+
+networks:
+  torrent:
+    name: torrent
