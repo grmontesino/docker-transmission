@@ -27,7 +27,7 @@ jobs:
         uses: docker/metadata-action@v3.6.2
         id: meta
         with:
-          images: grmontesino/docker-transmission
+          images: grmontesino/transmission
           tags: |
             type=edge,branch=develop
             type=edge,branch=ci-test
