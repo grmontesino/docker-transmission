@@ -11,7 +11,7 @@ on:
 jobs:
   build_push:
     name: Build image and build_push
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-latest
     steps:
 
       - name: Checkout
