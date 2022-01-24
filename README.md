@@ -85,6 +85,7 @@ In case there is some need to change the compose file, the easiest way is likely
 
 No secrets, just `docker-compose build` if desired
 
-## Available tags
+## Available tags / versioning
 
-This image uses the official alpine packages for transmission, and as such the images are tagged based on the alpine version used as base.
+* alpine-[x.y]-i[z]: Stable version based on alpine [x.y], image revision [z].
+* edge: Moving tag with latest commit on `develop`. May be broken.
