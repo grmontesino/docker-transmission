@@ -1,15 +1,17 @@
 FROM alpine:3.15
 
 EXPOSE 9091 51413 51413/udp
-VOLUME /transmission/config /transmission/download
 
 ENV TRANSMISSION_HOME=/transmission/config
 
-RUN apk --no-cache add tzdata transmission-daemon
+RUN apk --no-cache add tzdata transmission-daemon && \
+	mkdir -p /transmission/config /transmission/download
 
 USER transmission
 
 COPY entrypoint.sh /transmission
+
+VOLUME /transmission/config /transmission/download
 
 ENTRYPOINT ["/transmission/entrypoint.sh"]
 CMD ["transmission-daemon", "-f", "-w", "/transmission/download"]
