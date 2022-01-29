@@ -8,6 +8,8 @@ services:
     env_file: ./.env
     restart: "no"
     user: ${UID:-100}
+    group_add:
+      - ${GID:-100}
     networks:
       - torrent
     ports:

@@ -28,6 +28,7 @@ The available variables can be seen on the provided example file `.env.sample` w
 | PORT_FORWARDING | port-forwarding-enabled | UPNP / NAT-PNP, doesn't work (by default) on container, so should likely be kept off (false)
 | TZ              | - | Timezone |
 | UID             | - | User (uid) used to run the daemon. Downloaded files will be owned by this user by default |
+| GID             |   | Group (gid) the running user will be a member of. Can be used to ease file permission management |
 | ALLOWED         | rpc-whitelist | Comma-separated list of ips allowed to access the daemon through RPC |
 | RPC_PORT        | - | This port will be mapped on the host to the daemon's RPC PORT |
 | PEER_PORT_TCP   | - | This port will be mapped on the host to the daemon's TCP peer port |
