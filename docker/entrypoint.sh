@@ -50,6 +50,8 @@ if [ "$1" == "transmission-daemon" ]; then
   [ -n "$CACHE_SIZE_MB" ] && cfg_set "cache-size-mb" "$CACHE_SIZE_MB"
   [ -n "$PORT_FORWARDING" ] && cfg_set \
     "port-forwarding-enabled" "$PORT_FORWARDING"
+  [ -n "$RPC_HOST_WHITELIST" ] && cfg_set "rpc-host-whitelist" \
+    "\"$RPC_HOST_WHITELIST\""
 
   # Config file toogle options
   [ -n "$SPEED_LIMIT_DOWN" ] && cfg_toogle_set \

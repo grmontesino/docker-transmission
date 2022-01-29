@@ -30,6 +30,7 @@ The available variables can be seen on the provided example file `.env.sample` w
 | UID             | - | User (uid) used to run the daemon. Downloaded files will be owned by this user by default |
 | GID             |   | Group (gid) the running user will be a member of. Can be used to ease file permission management |
 | ALLOWED         | rpc-whitelist | Comma-separated list of ips allowed to access the daemon through RPC |
+| RPC_HOST_WHITELIST | rpc-host-whitelist | hostnames which can be used when connecting to RPC. |
 | RPC_PORT        | - | This port will be mapped on the host to the daemon's RPC PORT |
 | PEER_PORT_TCP   | - | This port will be mapped on the host to the daemon's TCP peer port |
 | PEER_PORT_UDP   | - | This port will be mapped on the host to the daemon's UDP peer port |
@@ -75,6 +76,7 @@ Editing the compose file directly is also an option, however it'll demand some e
       torrent:
         external: true
     ```
+* To connect to the daemon using the container's name as hostname, it must be whitelisted through the parameter `RPC_HOST_WHITELIST`. It's done by default on the provided `.env.sample` sample configuration file.
 
 ## Updating
 
