@@ -34,6 +34,7 @@ The available variables can be seen on the provided example file `.env.sample` w
 | RPC_PORT        | - | This port will be mapped on the host to the daemon's RPC PORT |
 | PEER_PORT_TCP   | - | This port will be mapped on the host to the daemon's TCP peer port |
 | PEER_PORT_UDP   | - | This port will be mapped on the host to the daemon's UDP peer port |
+| RESTART         | - | Container's restart policy, defaults to unless-stopped |
 | CACHE_SIZE_MB   | cache-size-mb | Size in MB for transmission's memory cache |
 | DOWNLOAD_QUEUE | download-queue-size | Max amount of torrents to download in parallel, 0 to disable |
 | SEED_QUEUE | seed-queue-size | Max amount of torrents to seed in parallel, 0 to disable |
