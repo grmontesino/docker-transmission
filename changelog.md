@@ -1,6 +1,6 @@
 # Changelog
 
-## (TBD)
+## alpine-3.15-i2  -  2022-01-31
 
 * New environment variables:
   * `GID`: The user used to run Transmission's daeamon will be added to this group;
