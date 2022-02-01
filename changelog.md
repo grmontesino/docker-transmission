@@ -1,5 +1,9 @@
 # Changelog
 
+## alpine-3.15-i3  -  2022-01-31
+
+* Fix CI pattern for release tags.
+
 ## alpine-3.15-i2  -  2022-01-31
 
 * New environment variables:
