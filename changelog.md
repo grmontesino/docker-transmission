@@ -1,5 +1,9 @@
 # Changelog
 
+## alpine-3.15.1-i1 - 2022-03-18
+
+* Base image update
+
 ## alpine-3.15-i3  -  2022-01-31
 
 * Fix CI pattern for release tags.
