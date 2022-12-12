@@ -1,5 +1,9 @@
 # Changelog
 
+## aplpine 3.17.0-i1 - 2022-12-12
+
+* Base image update
+
 ## alpine-3.15.1-i1 - 2022-03-18
 
 * Base image update
