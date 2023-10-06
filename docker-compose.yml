@@ -4,7 +4,7 @@ services:
   transmission:
     container_name: transmission
     build: ./docker
-    image: grmontesino/transmission:${TAG:-alpine-3.15.1-i1}
+    image: grmontesino/transmission:${TAG:-latest}
     env_file: ./.env
     restart: ${RESTART:-unless-stopped}
     user: ${UID:-100}
