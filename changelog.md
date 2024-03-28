@@ -1,9 +1,12 @@
 # Changelog
 
-## alpine-3.19.0-i1 - 2023-12-09
+## alpine-3.19.1-i1 - 2024-03-28
 
 * Base image update
 
+## alpine-3.19.0-i1 - 2023-12-09
+
+* Base image update
 
 ## alpine-3.18.4-i1 - 2023-10-05
 
