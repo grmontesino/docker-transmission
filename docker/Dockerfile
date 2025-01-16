@@ -1,4 +1,4 @@
-FROM alpine:3.20.2
+FROM alpine:3.21.2
 
 EXPOSE 9091 51413 51413/udp
 
