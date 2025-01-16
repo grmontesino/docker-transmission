@@ -1,5 +1,9 @@
 # Changelog
 
+## alpine-3.21.2-i1 - 2025-01-15
+
+* Base image update
+
 ## alpine-3.20.2-i1 - 2024-08-14
 
 * Base image update
